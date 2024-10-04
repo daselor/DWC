@@ -3,6 +3,7 @@
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                         OBJETO WINDOW
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+{
 
 // console.log("Printea en la consola");
 // console.log(window.location.href);
@@ -21,10 +22,12 @@
 //     console.log("¿De verdad que no te sabes tu nombre?")
 // }
 
+}
 
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                         OBJETO STRING
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+{
 
 let nombre1 = "Juan";
 let saludo = `Hola, ${nombre1}`; // Hay que usar los acentos abiertos
@@ -72,4 +75,4 @@ console.log(nombreCompletoConcat);
 
 //slice(start, end) Extrae una subcadena desde la posición inicial dada y la final
 
-
+}
