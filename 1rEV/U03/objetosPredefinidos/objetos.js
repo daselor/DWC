@@ -3,7 +3,7 @@
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                         OBJETO WINDOW
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-// {
+{
 
 // console.log("Printea en la consola");
 // console.log(window.location.href);
@@ -22,12 +22,12 @@
 //     console.log("¿De verdad que no te sabes tu nombre?")
 // }
 
-// }
+}
 
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                         OBJETO STRING
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-// {
+{
 
 // let nombre1 = "Juan";
 // let saludo = `Hola, ${nombre1}`; // Hay que usar los acentos abiertos
@@ -96,12 +96,12 @@
 // let caracteres = texto.split("");
 // console.log(caracteres); // Imprime un array con cada caracter
 
-// }
+}
 
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                         OBJETO DATE
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-// {
+{
 
 // // Sin argumentos crea un objeto Date con la fecha y hora actual según el reloj del sistema.
 // let fechaActual = new Date();
@@ -148,16 +148,137 @@
 //     // .getMilliseconds(): Devuelve los milisegundos de la fecha como un número entero 
 //     // de 0 a 999.
 //     let actualMilisegundos = fechaActual.getMilliseconds();
-//     console.log(`Milisegundos actuales: ${actualMilisegundos}`);
-    
-// }   
+//     console.log(`Milisegundos actuales: ${actualMilisegundos}`); 
 
-// }
+}
 
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //?                     OBJETO NUMBER Y MATH
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 {
 
+//*      FUNCIONES OBJETO NUMBER:
 
+//  .toString() Convierte el número en una cadena de texto
+    let numberString = 1299.23;
+    console.log(numberString.toString());
+
+//  .toFixed(n) Convierte el número en una cadena de texto on 'n' decimales
+    let numberFixed = 122.344232;
+    console.log(numberFixed.toFixed(3));
+
+//  .toExponential(n) Convierte un número a una cadena de texto en 
+//  notación científica.
+    let numberExponential = 1022.23;
+    console.log(numberExponential.toExponential(3));
+    
+//  .valueOF() Devuelve el valor primitivo del número.
+    let numberPrimitive = 123.11;
+    console.log(numberPrimitive.valueOf());
+
+//  .isFinite(number) Devuelve true/false dependiendo si el número es finito
+    let numberFinite = 33;
+    let numberNaN = "rodrigo";
+    console.log(isFinite(numberFinite));
+    console.log(isFinite(numberNaN));
+
+// .isNaN(number) Devuelve true/false dependiendo si el número es NaN o no
+    console.log(isNaN(numberNaN));
+    console.log(isNaN(numberFinite));
+
+//  .parse(String) Convierte una cadena de texto a un número.
+    console.log(parseFloat(numberFixed.toFixed(2)));
+
+
+//*      FUNCIONES OBJETO MATH:
+
+//  CONSTANTES MATEMÁTICAS:
+//      π (Pi): Representa el valor de pi (aproximadamente 3.14159).
+//      e (Base de los logaritmos naturales): Aproximadamente 2.71828.
+//      LN2 (Logaritmo natural de 2): Aproximadamente 0.693147.
+//      LN10 (Logaritmo natural de 10): Aproximadamente 2.302585.
+//      SQRT2 (Raíz cuadrada de 2): Aproximadamente 1.414214.
+//      SQRT1_2 (Raíz cuadrada de 1/2): Aproximadamente 0.707107.
+//      E (Número de Euler): Aproximadamente 2.718282.
+//      Infinity (Infinito positivo): Representa el valor infinito.
+//      NEGATIVE_INFINITY (Infinito negativo): Representa el valor
+//      infinito negativo.
+//      NaN ("Not a Number"): Representa un valor no numérico.
+
+//  CONSTANTES DE REDONDEO:
+//      ROUND_DOWN (1): Redondea hacia abajo.
+//      ROUND_UP (2): Redondea hacia arriba.
+//      ROUND_CEIL (3): Redondea hacia arriba (equivalente a Math.ceil()).
+//      ROUND_FLOOR (4): Redondea hacia abajo (equivalente a Math.floor()).
+//      ROUND_HALF_UP (5): Redondea hacia el valor más cercano, con desempate
+//      hacia arriba.
+//      ROUND_HALF_DOWN (6): Redondea hacia el valor más cercano,
+//      con desempate hacia abajo.
+
+//  FUNCIONES:
+
+//  Funciones aritméticas básicas:
+//      abs(x): Valor absoluto de x.
+//      pow(x, y): Eleva x a la potencia y.
+//      sqrt(x): Raíz cuadrada de x.
+//      floor(x): Redondea x hacia abajo al entero más cercano.
+//      ceil(x): Redondea x hacia arriba al entero más cercano.
+//      round(x): Redondea x al entero más cercano.
+//      random(): Genera un número aleatorio entre 0 y 1.
+
+//  Funciones trigonométricas:
+//      sin(x): Seno de x (en radianes).
+//      cos(x): Coseno de x (en radianes).
+//      tan(x): Tangente de x (en radianes).
+//      asin(x): Arcoseno de x (en radianes, entre -π/2 y π/2).
+//      acos(x): Arcocoseno de x (en radianes, entre 0 y π).
+//      atan(x): Arcotangente de x (en radianes, entre -π/2 y π/2).
+//      atan2(y, x): Arcotangente de y/x (en radianes, entre -π y π).
+
+//  Funciones de logaritmos:
+//      log(x): Logaritmo en base 10 de x.
+//      log10(x): Logaritmo en base 10 de x.
+//      log2(x): Logaritmo en base 2 de x.
+//      exp(x): Exponencial de x (e^x).
+
+//  Funciones de redondeo:
+//      round(x): Redondea x al entero más cercano.
+//      floor(x): Redondea x hacia abajo al entero más cercano.
+//      ceil(x): Redondea x hacia arriba al entero más cercano.
+
+//  Otras funciones:
+//      max(x, y, ...): Devuelve el valor máximo entre los argumentos.
+//      min(x, y, ...): Devuelve el valor mínimo entre los argumentos.
+
+}
+
+//? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//?                     ALMACENAMIENTO LOCAL
+//? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+{
+//?                           COOKIES
+//? ................................................................
+
+    
+// Creación de cookies:
+    document.cookie = "nombre=Pepe"; 
+    document.cookie = "edad=30"; 
+    document.cookie = "ciudad=Valencia";
+
+    alert("Cookies guardadas correctamente.");
+    console.log(document.cookie);
+
+// path: Establece la accesibilidad de la cookie.
+    document.cookie = "ciudad2=Murcia; path=/"
+
+// expires, max-age: Establece cuando expira la cookie.
+// Si estos valores están predeterminados, la cookie expira junto a la sesión.
+    let date = new Date(Date.now() + 864e2);
+    date = date.toUTCString();
+    document.cookie = "ciudad3=Cartagena;" + date;
+
+    document.cookie = "ciudad4=Logroño; max-age=3600"
+    alert();
+    
 }
