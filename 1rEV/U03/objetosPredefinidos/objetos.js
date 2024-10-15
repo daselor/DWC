@@ -257,28 +257,56 @@
 //? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 {
-//?                           COOKIES
-//? ................................................................
+// //?                           COOKIES
+// //? ................................................................
 
     
-// Creación de cookies:
-    document.cookie = "nombre=Pepe"; 
-    document.cookie = "edad=30"; 
-    document.cookie = "ciudad=Valencia";
+// // Creación de cookies:
+//     document.cookie = "nombre=Pepe"; 
+//     document.cookie = "edad=30"; 
+//     document.cookie = "ciudad=Valencia";
 
-    alert("Cookies guardadas correctamente.");
-    console.log(document.cookie);
+//     alert("Cookies guardadas correctamente.");
+//     console.log(document.cookie);
 
-// path: Establece la accesibilidad de la cookie.
-    document.cookie = "ciudad2=Murcia; path=/"
+// // path: Establece la accesibilidad de la cookie.
+//     document.cookie = "ciudad2=Murcia; path=/"
 
-// expires, max-age: Establece cuando expira la cookie.
-// Si estos valores están predeterminados, la cookie expira junto a la sesión.
-    let date = new Date(Date.now() + 864e2);
-    date = date.toUTCString();
-    document.cookie = "ciudad3=Cartagena;" + date;
+// // expires, max-age: Establece cuando expira la cookie.
+// // Si estos valores están predeterminados, la cookie expira junto a la sesión.
+//     let date = new Date(Date.now() + 864e2);
+//     date = date.toUTCString();
+//     document.cookie = "ciudad3=Cartagena;" + date;
 
-    document.cookie = "ciudad4=Logroño; max-age=3600"
-    alert();
+//     document.cookie = "ciudad4=Logroño; max-age=3600"
+//     alert();
     
+
+// //?                    API ALMACENAMIENTO WEB
+// //? ................................................................
+
+// // LocalStorage es una api web que permite almacenar datos en el navegador 
+// // del usuario de forma persistente.
+
+// // Los elementos mas importantes del almacenamiento local son:
+
+// // .setItem(key,value) Almacena un dato en el almacenamiento local.
+// localStorage.setItem("nombre", "Juan");
+// localStorage.setItem("edad", 30);
+
+// // .getItem(key) Devuelve el dato almacenado con la clave dada.
+// let nombre = localStorage.getItem("nombre");
+// console.log(nombre);
+
+// let edad = localStorage.getItem("edad");
+// console.log(edad);
+
+// // .removeItem(key) Elimina el dato almacenado con la clave dada.
+// localStorage.removeItem("nombre");
+// console.log(localStorage.getItem("nombre"));
+
+// // .clear() Elimina todos los datos almacenados en local.
+// localStorage.clear();
+// console.log(localStorage.getItem("edad"));
+
 }
